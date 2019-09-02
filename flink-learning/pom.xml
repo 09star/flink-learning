@@ -67,6 +67,11 @@ under the License.
 			<scope>provided</scope>
 		</dependency>
 
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-cep_${scala.binary.version}</artifactId>
+            <version>${flink.version}</version>
+        </dependency>
 		<!-- Add connector dependencies here. They must be in the default scope (compile). -->
 
 		<!-- Example:
@@ -144,7 +149,7 @@ under the License.
 							</filters>
 							<transformers>
 								<transformer implementation="org.apache.maven.plugins.shade.resource.ManifestResourceTransformer">
-									<mainClass>me.09star.StreamingJob</mainClass>
+									<mainClass>me.raostar.StreamingJob</mainClass>
 								</transformer>
 							</transformers>
 						</configuration>
